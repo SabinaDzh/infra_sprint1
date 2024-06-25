@@ -1,14 +1,9 @@
 import os
 from pathlib import Path
 
-import environ
-
-env = environ.Env()
-environ.Env.read_env()
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = env.str('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'default_django_key')
 
 DEBUG = False
 
