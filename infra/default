@@ -38,7 +38,7 @@ server {
 }
 
 server {
-        server_name 158.160.91.200 mykittypro.zapto.org;
+    server_name 158.160.91.200 mykittypro.zapto.org;
 
     location / {
         root   /var/www/kittygram;
